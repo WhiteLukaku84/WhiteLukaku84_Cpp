@@ -1,22 +1,18 @@
+#include <ctime>
 #include <iostream>
-#include<ctime>
 using namespace std;
 
-void generowanieLiczb(int tab[], int n)
-{
-    int i;
-    for(i=0;i<n;i++)
-      {
-         tab[i]=rand()%256;
-      }
+void generowanieLiczb(int tab[], int n) {
+  int i;
+  for (i = 0; i < n; i++) {
+    tab[i] = rand() % 256;
+  }
 }
-void wypisanieLiczb(int tab[],int n)
-{
-   cout << "wygenerowane liczby: ";
-  for (int i=0;i<n;i++)
-    {
-      cout << tab[i] << " ";
-    }
+void wypisanieLiczb(int tab[], int n) {
+  cout << "wygenerowane liczby: ";
+  for (int i = 0; i < n; i++) {
+    cout << tab[i] << " ";
+  }
 }
 
 int main() {
@@ -28,9 +24,9 @@ int main() {
 
   int tablica[zakres];
 
- generowanieLiczb(tablica,zakres);
- wypisanieLiczb(tablica,zakres);
+  generowanieLiczb(tablica, zakres);
 
+  wypisanieLiczb(tablica, zakres);
 
-  
+  /////
 }
